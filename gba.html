@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Emerald Emulator</title>
+  <!-- EmulatorJS v4.0.6 -->
+  <script src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@4.0.6/dist/emulator.min.js"></script>
+</head>
+<body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
+  <div id="emulator" style="width:960px; height:640px;"></div>
+  <script>
+    EmulatorJS.load({
+      type: 'gba',
+      romUrl: 'https://bluejamgit.github.io/GBA-Rom/Pokemon%20-%20Emerald%20Version%20(USA,%20Europe).gba',
+      element: document.getElementById('emulator'),
+      autoplay: true
+    });
+  </script>
+</body>
+</html>
